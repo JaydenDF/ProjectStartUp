@@ -88,8 +88,9 @@ public class Flower : MonoBehaviour
     {
         if (gardenManager.isHoldingSeeds)
         {
+            gardenManager.seedAmount--;
             isSeeded = true;
-            //gardenManager.hasSeeds = false;
+            gardenManager.isHoldingSeeds = false;
         }
     }
 
@@ -97,8 +98,9 @@ public class Flower : MonoBehaviour
     {
         if (gardenManager.isHoldingWater && isSeeded)
         {
+            gardenManager.waterAmount--;
             hasCried = true;
-            //gardenManager.hasWater = false;
+            gardenManager.isHoldingWater = false;
         }
     }
 
@@ -106,8 +108,9 @@ public class Flower : MonoBehaviour
     {
         if (gardenManager.isHoldingSun && hasCried)
         {
+            gardenManager.sunAmount--;
             isSunned = true;
-            //gardenManager.hasSun = false;
+            gardenManager.isHoldingSun = false;
         }
     }
 

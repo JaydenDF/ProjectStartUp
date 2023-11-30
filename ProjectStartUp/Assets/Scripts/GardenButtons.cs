@@ -8,7 +8,7 @@ public class GardenButtons : MonoBehaviour
 
     public void SelectSeed()
     {
-        if(gardenManager.hasSeeds)
+        if(gardenManager.seedAmount >= 1)
         {
             gardenManager.isHoldingSeeds = true;
             gardenManager.isHoldingWater = false;
@@ -18,7 +18,7 @@ public class GardenButtons : MonoBehaviour
 
     public void SelectWater()
     {
-        if (gardenManager.hasWater)
+        if (gardenManager.waterAmount >= 1)
         {
             gardenManager.isHoldingWater = true;
             gardenManager.isHoldingSun = false;
@@ -28,7 +28,7 @@ public class GardenButtons : MonoBehaviour
 
     public void SelectSun()
     {
-        if (gardenManager.hasSun)
+        if (gardenManager.sunAmount >= 1)
         {
             gardenManager.isHoldingSun = true;
             gardenManager.isHoldingWater = false;

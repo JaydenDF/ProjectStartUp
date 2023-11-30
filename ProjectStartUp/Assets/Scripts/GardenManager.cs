@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GardenManager : MonoBehaviour
 {
-    public int sunAmount;
-    public int waterAmount;
-    public int seedAmount;
+    [SerializeField] private TMP_Text waterAmountUI;
+    [SerializeField] private TMP_Text sunAmountUI;
+    [SerializeField] private TMP_Text seededAmountUI;
+
+    public int sunAmount = 6;
+    public int waterAmount = 6;
+    public int seedAmount = 6;
 
     public bool hasSun = true;
     public bool hasWater = true;
@@ -19,15 +24,11 @@ public class GardenManager : MonoBehaviour
     public bool hasSunnedPlant = false;
     public bool hasCriedYet = false;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        
+        waterAmountUI.text = "Water: " + waterAmount;
+        sunAmountUI.text = "Sun: " + sunAmount;
+        seededAmountUI.text = "seeds: " + seedAmount;
     }
 }
