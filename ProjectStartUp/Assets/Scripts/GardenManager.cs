@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class GardenManager : MonoBehaviour
 {
+    public int sunAmount;
+    public int waterAmount;
+    public int seedAmount;
+
     public bool hasSun = true;
     public bool hasWater = true;
     public bool hasSeeds = true;

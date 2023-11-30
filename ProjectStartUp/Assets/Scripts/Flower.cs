@@ -9,6 +9,7 @@ public class Flower : MonoBehaviour
     //to store information about the flower that needs to change behind the scene/when the user is not inside the garden
     [SerializeField] Button button;
     [SerializeField] GardenManager gardenManager;
+    [SerializeField] Image needsIcon;
 
     public bool hasCried = false;
     public bool isSunned = false;
@@ -20,6 +21,10 @@ public class Flower : MonoBehaviour
     public Sprite state2;
     public Sprite state3;
     public Sprite state4;
+
+    public Sprite needSeeds;
+    public Sprite needWater;
+    public Sprite needSun;
 
     public float growthTimer;
 
@@ -49,6 +54,19 @@ public class Flower : MonoBehaviour
             currentState = 2;
             button.GetComponent<Image>().sprite = state2;
         }
+
+        if (!isSeeded)
+        {
+            needsIcon.GetComponent<Image>().sprite = needSeeds;
+        }
+        else if (!hasCried)
+        {
+            needsIcon.GetComponent<Image>().sprite = needWater;
+        }
+        else if (!isSunned)
+        {
+            needsIcon.GetComponent<Image>().sprite = needSun;
+        }
     }
 
     public void PlantSeed()
@@ -56,7 +74,7 @@ public class Flower : MonoBehaviour
         if (gardenManager.isHoldingSeeds)
         {
             isSeeded = true;
-            gardenManager.hasSeeds = false;
+            //gardenManager.hasSeeds = false;
         }
     }
 
@@ -65,7 +83,7 @@ public class Flower : MonoBehaviour
         if (gardenManager.isHoldingWater)
         {
             hasCried = true;
-            gardenManager.hasWater = false;
+            //gardenManager.hasWater = false;
         }
     }
 
@@ -74,7 +92,7 @@ public class Flower : MonoBehaviour
         if (gardenManager.isHoldingSun)
         {
             isSunned = true;
-            gardenManager.hasSun = false;
+            //gardenManager.hasSun = false;
         }
     }
 
@@ -82,6 +100,10 @@ public class Flower : MonoBehaviour
     {
         if(rewardIsDropped)
         {
+            isSeeded = false;
+            hasCried = false;
+            isSunned = false;
+            growthTimer = 0;
             currentState = 1;
             button.GetComponent<Image>().sprite = state1;
         }
