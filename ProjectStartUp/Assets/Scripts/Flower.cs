@@ -13,6 +13,7 @@ public class Flower : MonoBehaviour
     [SerializeField] GameObject needsIcon;
     [SerializeField] private TMP_Text growthTimerUI;
     [SerializeField] GameObject growthTimerUIBlock;
+    [SerializeField] WardrobeItem wardrobeItem;
 
     public bool hasCried = false;
     public bool isSunned = false;
@@ -118,6 +119,7 @@ public class Flower : MonoBehaviour
     {
         if(rewardIsDropped)
         {
+            wardrobeItem.currentAmount++;
             rewardIsDropped = false;
             isSeeded = false;
             hasCried = false;
