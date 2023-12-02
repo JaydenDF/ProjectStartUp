@@ -24,6 +24,13 @@ public class GardenManager : MonoBehaviour
     public bool hasSunnedPlant = false;
     public bool hasCriedYet = false;
 
+
+    private void Awake()
+    {
+        sunAmount = 6;
+        waterAmount = 6;
+        seedAmount = 6;
+    }
     // Update is called once per frame
     void Update()
     {
