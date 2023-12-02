@@ -49,7 +49,7 @@ public class WardrobeItem : MonoBehaviour
 
     public void ActivateOrDeactivate()
     {
-        if (!isActive)
+        if (!isActive && isCompleted)
         {
             ActivateWardrobeItem();
         }
