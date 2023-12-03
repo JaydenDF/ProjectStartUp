@@ -2164,13 +2164,14 @@ GameObject:
   - component: {fileID: 88494308}
   - component: {fileID: 88494307}
   - component: {fileID: 88494306}
+  - component: {fileID: 88494310}
   m_Layer: 5
   m_Name: 'Main screen Garden zoom '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &88494306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2258,6 +2259,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &88494310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88494305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a30f4c6fe124ac45b9e1588e85df44d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gardenManager: {fileID: 962552968}
 --- !u!1 &92328201
 GameObject:
   m_ObjectHideFlags: 0
@@ -9526,7 +9540,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 452690363}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 88494310}
+        m_TargetAssemblyTypeName: GardenButtons, Assembly-CSharp
+        m_MethodName: SelectSun
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &452690363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11388,6 +11414,7 @@ GameObject:
   - component: {fileID: 557335347}
   - component: {fileID: 557335346}
   - component: {fileID: 557335345}
+  - component: {fileID: 557335348}
   m_Layer: 5
   m_Name: hole
   m_TagString: Untagged
@@ -11458,7 +11485,55 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 557335346}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 557335348}
+        m_TargetAssemblyTypeName: Flower, Assembly-CSharp
+        m_MethodName: PlantSeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 557335348}
+        m_TargetAssemblyTypeName: Flower, Assembly-CSharp
+        m_MethodName: GiveWater
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 557335348}
+        m_TargetAssemblyTypeName: Flower, Assembly-CSharp
+        m_MethodName: GiveSun
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 557335348}
+        m_TargetAssemblyTypeName: Flower, Assembly-CSharp
+        m_MethodName: CollectReward
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &557335346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11497,6 +11572,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557335343}
   m_CullTransparentMesh: 1
+--- !u!114 &557335348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557335343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 801c50c14a97da44097488862848d8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 557335345}
+  gardenManager: {fileID: 962552968}
+  needsIcon: {fileID: 1372877090}
+  growthTimerUI: {fileID: 850948939}
+  growthTimerUIBlock: {fileID: 850948937}
+  wardrobeItem: {fileID: 5773454982919840719}
+  hasCried: 0
+  isSunned: 0
+  isSeeded: 0
+  rewardIsDropped: 0
+  state1: {fileID: 21300000, guid: ddf6485ef16b53646ad0999578cad1c9, type: 3}
+  state2: {fileID: 21300000, guid: 107517e4e96ac1444a2c4cadc98a93a0, type: 3}
+  state3: {fileID: 21300000, guid: d062f822e73eec24297a5457b4aa78d0, type: 3}
+  state4: {fileID: 21300000, guid: 3b57da56e60f35d49b6222cb7bcd4534, type: 3}
+  needSeeds: {fileID: 21300000, guid: 6ab9de5e7fd4f50409f12d5862a517e1, type: 3}
+  needWater: {fileID: 21300000, guid: 56587eb05287092498826324b585cd53, type: 3}
+  needSun: {fileID: 21300000, guid: 15bb5c494c3af5d43a98c3150ebe1662, type: 3}
+  growthTimer: 10
+  roundedGrowthTimer: 0
 --- !u!1 &560848566
 GameObject:
   m_ObjectHideFlags: 0
@@ -14645,7 +14751,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &723609894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19578,6 +19684,7 @@ GameObject:
   - component: {fileID: 952152267}
   - component: {fileID: 952152266}
   - component: {fileID: 952152265}
+  - component: {fileID: 952152268}
   m_Layer: 5
   m_Name: hole
   m_TagString: Untagged
@@ -19648,7 +19755,55 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 952152266}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 952152268}
+        m_TargetAssemblyTypeName: Flower, Assembly-CSharp
+        m_MethodName: PlantSeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 952152268}
+        m_TargetAssemblyTypeName: Flower, Assembly-CSharp
+        m_MethodName: GiveWater
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 952152268}
+        m_TargetAssemblyTypeName: Flower, Assembly-CSharp
+        m_MethodName: GiveSun
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 952152268}
+        m_TargetAssemblyTypeName: Flower, Assembly-CSharp
+        m_MethodName: CollectReward
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &952152266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19687,6 +19842,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952152263}
   m_CullTransparentMesh: 1
+--- !u!114 &952152268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952152263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 801c50c14a97da44097488862848d8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 952152265}
+  gardenManager: {fileID: 962552968}
+  needsIcon: {fileID: 1305146703}
+  growthTimerUI: {fileID: 77952618}
+  growthTimerUIBlock: {fileID: 77952616}
+  wardrobeItem: {fileID: 5773454982919840719}
+  hasCried: 0
+  isSunned: 0
+  isSeeded: 0
+  rewardIsDropped: 0
+  state1: {fileID: 21300000, guid: ddf6485ef16b53646ad0999578cad1c9, type: 3}
+  state2: {fileID: 21300000, guid: 107517e4e96ac1444a2c4cadc98a93a0, type: 3}
+  state3: {fileID: 21300000, guid: d062f822e73eec24297a5457b4aa78d0, type: 3}
+  state4: {fileID: 21300000, guid: 3b57da56e60f35d49b6222cb7bcd4534, type: 3}
+  needSeeds: {fileID: 21300000, guid: 6ab9de5e7fd4f50409f12d5862a517e1, type: 3}
+  needWater: {fileID: 21300000, guid: 56587eb05287092498826324b585cd53, type: 3}
+  needSun: {fileID: 21300000, guid: 15bb5c494c3af5d43a98c3150ebe1662, type: 3}
+  growthTimer: 10
+  roundedGrowthTimer: 0
 --- !u!1 &957429155
 GameObject:
   m_ObjectHideFlags: 0
@@ -19808,6 +19994,109 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957429155}
   m_CullTransparentMesh: 1
+--- !u!1 &962552964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 962552967}
+  - component: {fileID: 962552966}
+  - component: {fileID: 962552965}
+  - component: {fileID: 962552968}
+  m_Layer: 5
+  m_Name: FunctionController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &962552965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962552964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &962552966
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962552964}
+  m_CullTransparentMesh: 1
+--- !u!224 &962552967
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962552964}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.101111, y: 2.101111, z: 2.101111}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &962552968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962552964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c20901702db3224c9c268afbffbedd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterAmountUI: {fileID: 1262348014}
+  sunAmountUI: {fileID: 645848350}
+  seededAmountUI: {fileID: 1844578254}
+  sunAmount: 6
+  waterAmount: 6
+  seedAmount: 6
+  hasSun: 1
+  hasWater: 1
+  hasSeeds: 1
+  isHoldingSun: 0
+  isHoldingWater: 0
+  isHoldingSeeds: 0
+  hasSunnedPlant: 0
+  hasCriedYet: 0
 --- !u!1 &977961636
 GameObject:
   m_ObjectHideFlags: 0
@@ -23482,7 +23771,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1253913553}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 88494310}
+        m_TargetAssemblyTypeName: GardenButtons, Assembly-CSharp
+        m_MethodName: SelectWater
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1253913553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27400,6 +27701,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469579392}
   m_CullTransparentMesh: 1
+--- !u!1 &1482960667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4759485122978727730, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+  m_PrefabInstance: {fileID: 5773454982919840714}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1499754419
 GameObject:
   m_ObjectHideFlags: 0
@@ -33297,6 +33603,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1810342099 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5621978585341461110, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+  m_PrefabInstance: {fileID: 5773454982919840714}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1810342104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810342099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478ba1e99a86a01408a55ed80836e285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1818440594
 GameObject:
   m_ObjectHideFlags: 0
@@ -33309,6 +33632,7 @@ GameObject:
   - component: {fileID: 1818440598}
   - component: {fileID: 1818440597}
   - component: {fileID: 1818440596}
+  - component: {fileID: 1818440599}
   m_Layer: 5
   m_Name: hole
   m_TagString: Untagged
@@ -33379,7 +33703,55 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1818440597}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1818440599}
+        m_TargetAssemblyTypeName: Flower, Assembly-CSharp
+        m_MethodName: PlantSeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1818440599}
+        m_TargetAssemblyTypeName: Flower, Assembly-CSharp
+        m_MethodName: GiveWater
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1818440599}
+        m_TargetAssemblyTypeName: Flower, Assembly-CSharp
+        m_MethodName: GiveSun
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1818440599}
+        m_TargetAssemblyTypeName: Flower, Assembly-CSharp
+        m_MethodName: CollectReward
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1818440597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33418,6 +33790,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1818440594}
   m_CullTransparentMesh: 1
+--- !u!114 &1818440599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818440594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 801c50c14a97da44097488862848d8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1818440596}
+  gardenManager: {fileID: 962552968}
+  needsIcon: {fileID: 487232918}
+  growthTimerUI: {fileID: 530001005}
+  growthTimerUIBlock: {fileID: 530001003}
+  wardrobeItem: {fileID: 5773454982919840719}
+  hasCried: 0
+  isSunned: 0
+  isSeeded: 0
+  rewardIsDropped: 0
+  state1: {fileID: 21300000, guid: ddf6485ef16b53646ad0999578cad1c9, type: 3}
+  state2: {fileID: 21300000, guid: 107517e4e96ac1444a2c4cadc98a93a0, type: 3}
+  state3: {fileID: 21300000, guid: d062f822e73eec24297a5457b4aa78d0, type: 3}
+  state4: {fileID: 21300000, guid: 3b57da56e60f35d49b6222cb7bcd4534, type: 3}
+  needSeeds: {fileID: 21300000, guid: 6ab9de5e7fd4f50409f12d5862a517e1, type: 3}
+  needWater: {fileID: 21300000, guid: 56587eb05287092498826324b585cd53, type: 3}
+  needSun: {fileID: 21300000, guid: 15bb5c494c3af5d43a98c3150ebe1662, type: 3}
+  growthTimer: 10
+  roundedGrowthTimer: 0
 --- !u!1 &1822110862
 GameObject:
   m_ObjectHideFlags: 0
@@ -34012,7 +34415,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1846784617}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 88494310}
+        m_TargetAssemblyTypeName: GardenButtons, Assembly-CSharp
+        m_MethodName: SelectSeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1846784617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36070,6 +36485,7 @@ GameObject:
   - component: {fileID: 1987112204}
   - component: {fileID: 1987112203}
   - component: {fileID: 1987112202}
+  - component: {fileID: 1987112205}
   m_Layer: 5
   m_Name: hole
   m_TagString: Untagged
@@ -36140,7 +36556,55 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1987112203}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1987112205}
+        m_TargetAssemblyTypeName: Flower, Assembly-CSharp
+        m_MethodName: PlantSeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1987112205}
+        m_TargetAssemblyTypeName: Flower, Assembly-CSharp
+        m_MethodName: GiveWater
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1987112205}
+        m_TargetAssemblyTypeName: Flower, Assembly-CSharp
+        m_MethodName: GiveSun
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1987112205}
+        m_TargetAssemblyTypeName: Flower, Assembly-CSharp
+        m_MethodName: CollectReward
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1987112203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36179,6 +36643,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987112200}
   m_CullTransparentMesh: 1
+--- !u!114 &1987112205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987112200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 801c50c14a97da44097488862848d8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1987112202}
+  gardenManager: {fileID: 962552968}
+  needsIcon: {fileID: 364049834}
+  growthTimerUI: {fileID: 1730008332}
+  growthTimerUIBlock: {fileID: 1730008330}
+  wardrobeItem: {fileID: 5773454982919840719}
+  hasCried: 0
+  isSunned: 0
+  isSeeded: 0
+  rewardIsDropped: 0
+  state1: {fileID: 21300000, guid: ddf6485ef16b53646ad0999578cad1c9, type: 3}
+  state2: {fileID: 21300000, guid: 107517e4e96ac1444a2c4cadc98a93a0, type: 3}
+  state3: {fileID: 21300000, guid: d062f822e73eec24297a5457b4aa78d0, type: 3}
+  state4: {fileID: 21300000, guid: 3b57da56e60f35d49b6222cb7bcd4534, type: 3}
+  needSeeds: {fileID: 21300000, guid: 6ab9de5e7fd4f50409f12d5862a517e1, type: 3}
+  needWater: {fileID: 21300000, guid: 56587eb05287092498826324b585cd53, type: 3}
+  needSun: {fileID: 21300000, guid: 15bb5c494c3af5d43a98c3150ebe1662, type: 3}
+  growthTimer: 10
+  roundedGrowthTimer: 0
 --- !u!1 &1989321639
 GameObject:
   m_ObjectHideFlags: 0
@@ -39371,6 +39866,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 88494309}
     m_Modifications:
+    - target: {fileID: 4298462904122454169, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4298462904122454169, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 702409984c37b1347ad85c3c8db3d606, type: 3}
+    - target: {fileID: 4491634184638393438, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f8274067106e7c34693dae2d6e97f644, type: 3}
     - target: {fileID: 4759485122978727730, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
       propertyPath: m_Name
       value: maSCOT PANEL
@@ -39378,6 +39885,38 @@ PrefabInstance:
     - target: {fileID: 4759485122978727730, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8593754458279533448, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8593754458279533448, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8593754458279533448, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1810342104}
+    - target: {fileID: 8593754458279533448, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8593754458279533448, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseCurrentPage
+      objectReference: {fileID: 0}
+    - target: {fileID: 8593754458279533448, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SwitchPage, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8593754458279533448, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1482960667}
+    - target: {fileID: 8593754458279533448, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 9125072231301623080, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
       propertyPath: m_Pivot.x
@@ -39470,3 +40009,50 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 9125072231301623080, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
   m_PrefabInstance: {fileID: 5773454982919840714}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5773454982919840716 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1896917117729425797, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+  m_PrefabInstance: {fileID: 5773454982919840714}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &5773454982919840717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5395761777580003869, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+  m_PrefabInstance: {fileID: 5773454982919840714}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5773454982919840718 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4491634184638393438, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+  m_PrefabInstance: {fileID: 5773454982919840714}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5773454982919840719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5773454982919840717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c88c20d7de8ab5409e2118da2425d51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  associatedMascot: {fileID: 5773454982919840718}
+  collectedAmount: {fileID: 5773454982919840716}
+  wardrobeItemImage: {fileID: 21300000, guid: 702409984c37b1347ad85c3c8db3d606, type: 3}
+  mascotSprite: {fileID: 21300000, guid: f8274067106e7c34693dae2d6e97f644, type: 3}
+  currentAmount: 0
+  isCompleted: 0
+  isActive: 0
+  canBeActivated: 0

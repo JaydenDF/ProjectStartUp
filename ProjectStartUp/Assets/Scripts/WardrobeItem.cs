@@ -8,8 +8,8 @@ using UnityEngine.UI;
 
 public class WardrobeItem : MonoBehaviour
 {
-    [SerializeField] Button associatedMascot;
-    [SerializeField] GameObject checkMark;
+    [SerializeField] Image associatedMascot;
+    //[SerializeField] GameObject checkMark;
     [SerializeField] private TMP_Text collectedAmount;
     [SerializeField] Sprite wardrobeItemImage;
     [SerializeField] Sprite mascotSprite;
@@ -64,7 +64,7 @@ public class WardrobeItem : MonoBehaviour
         associatedMascot.GetComponent<Image>().sprite = wardrobeItemImage;
         isActive = true;
         canBeActivated = false;
-        checkMark.SetActive(true);
+        //checkMark.SetActive(true);
     }
 
     public void DeactivateWardrobeItem()
@@ -72,6 +72,6 @@ public class WardrobeItem : MonoBehaviour
         isActive = false;
         canBeActivated = true;
         associatedMascot.GetComponent<Image>().sprite = mascotSprite;
-        checkMark.SetActive(false);
+        //checkMark.SetActive(false);
     }
 }
