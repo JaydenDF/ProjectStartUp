@@ -4244,18 +4244,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0caaa4ac6de9a54398c0aeb7ca9d031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  focusTimer: {fileID: 560648722}
-  breakTimer: {fileID: 282384697}
+  focusMinutesTens: {fileID: 0}
+  focusMinutes: {fileID: 0}
+  focusSeconds: {fileID: 0}
+  focusSecondsTens: {fileID: 0}
+  breakTimerMinutesTens: {fileID: 0}
+  breakTimerMinutes: {fileID: 0}
+  breakTimerSecondsTens: {fileID: 0}
+  breakTimerSeconds: {fileID: 0}
   sessionCounter: {fileID: 171532952}
   minutes: 0
+  minutesTens: 0
   rememberMinutes: 0
+  rememberMinutesTens: 0
   seconds: 0
+  secondsTens: 0
   rememberSeconds: 0
+  rememberSecondsTens: 0
   roundedSeconds: 0
   breakMinutes: 0
+  breakMinutesTens: 0
   rememberBreakMinutes: 0
+  rememberBreakMinutesTens: 0
   breakSeconds: 0
+  breakSecondsTens: 0
   rememberBreakSeconds: 10
+  rememberBreakSecondsTens: 0
   roundedBreakSeconds: 0
   sessionAmount: 0
   timerHasStarted: 0
@@ -4619,8 +4633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c88c20d7de8ab5409e2118da2425d51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  associatedMascot: {fileID: 268697871}
-  checkMark: {fileID: 583450421}
+  associatedMascot: {fileID: 0}
   collectedAmount: {fileID: 842405863}
   wardrobeItemImage: {fileID: 21300000, guid: 702409984c37b1347ad85c3c8db3d606, type: 3}
   mascotSprite: {fileID: 21300000, guid: f8274067106e7c34693dae2d6e97f644, type: 3}
@@ -7024,7 +7037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1069002002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8238,7 +8251,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1507602376
 RectTransform:
   m_ObjectHideFlags: 0

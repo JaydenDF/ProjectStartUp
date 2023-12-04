@@ -798,7 +798,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 42593494}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: ChangeSessionAmmount
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &42593494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1777,7 +1789,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 77357735}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: Dec10Seconds
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &77357735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2171,7 +2195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &88494306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2434,7 +2458,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 92830166}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: Add10Minutes
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &92830166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3083,7 +3119,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 139216057}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: Add1Second
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &139216057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3460,7 +3508,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 158064254}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: Add1Second
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &158064254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3851,7 +3911,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 167378906}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: ChangeSessionAmmount
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &167378906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4525,7 +4597,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 199266971}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: Dec1second
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &199266971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5383,7 +5467,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 226706914}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: Dec1second
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &226706914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6239,7 +6335,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 283774344}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: Dec1Minute
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &283774344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6437,7 +6545,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 310400308}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: Dec10Seconds
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &310400308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13160,7 +13280,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 647648821}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: Dec10Minutes
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &647648821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15089,13 +15221,14 @@ GameObject:
   - component: {fileID: 738233505}
   - component: {fileID: 738233504}
   - component: {fileID: 738233503}
+  - component: {fileID: 738233507}
   m_Layer: 5
   m_Name: Focus time
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &738233503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15181,6 +15314,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &738233507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738233502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8957c467f0628224eb4658748ed7973c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 962552969}
 --- !u!1 &740724834
 GameObject:
   m_ObjectHideFlags: 0
@@ -15905,7 +16051,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 773939826}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: ResetTimer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &773939826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20006,6 +20164,7 @@ GameObject:
   - component: {fileID: 962552966}
   - component: {fileID: 962552965}
   - component: {fileID: 962552968}
+  - component: {fileID: 962552969}
   m_Layer: 5
   m_Name: FunctionController
   m_TagString: Untagged
@@ -20097,6 +20256,48 @@ MonoBehaviour:
   isHoldingSeeds: 0
   hasSunnedPlant: 0
   hasCriedYet: 0
+--- !u!114 &962552969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962552964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0caaa4ac6de9a54398c0aeb7ca9d031, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusMinutesTens: {fileID: 2050365136}
+  focusMinutes: {fileID: 1689644265}
+  focusSeconds: {fileID: 1260795998}
+  focusSecondsTens: {fileID: 199709972}
+  breakTimerMinutesTens: {fileID: 170135938}
+  breakTimerMinutes: {fileID: 1125504140}
+  breakTimerSecondsTens: {fileID: 96093670}
+  breakTimerSeconds: {fileID: 1145530295}
+  sessionCounter: {fileID: 54356486}
+  minutes: 0
+  minutesTens: 0
+  rememberMinutes: 0
+  rememberMinutesTens: 0
+  seconds: 0
+  secondsTens: 0
+  rememberSeconds: 0
+  rememberSecondsTens: 0
+  roundedSeconds: 0
+  breakMinutes: 0
+  breakMinutesTens: 0
+  rememberBreakMinutes: 0
+  rememberBreakMinutesTens: 0
+  breakSeconds: 0
+  breakSecondsTens: 0
+  rememberBreakSeconds: 0
+  rememberBreakSecondsTens: 0
+  roundedBreakSeconds: 0
+  sessionAmount: 0
+  timerHasStarted: 0
+  breakTimerHasStarted: 0
 --- !u!1 &977961636
 GameObject:
   m_ObjectHideFlags: 0
@@ -22231,7 +22432,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1171249439}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: Add10Seconds
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1171249439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26135,7 +26348,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1366495176}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: Dec1Minute
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1366495176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27339,7 +27564,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1449830573}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: Add1Minute
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1449830573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29510,7 +29747,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1600943205}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: StartTimer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1600943205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30212,7 +30461,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1646859759}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: Add10Minutes
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1646859759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34548,7 +34809,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1847586680}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: Add10Seconds
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1847586680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36434,7 +36707,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1976362781}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: Dec10Minutes
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1976362781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38191,7 +38476,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2069886581}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 738233507}
+        m_TargetAssemblyTypeName: TimerButtons, Assembly-CSharp
+        m_MethodName: Add1Minute
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2069886581
 MonoBehaviour:
   m_ObjectHideFlags: 0
