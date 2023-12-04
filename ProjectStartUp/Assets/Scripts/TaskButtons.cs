@@ -10,6 +10,7 @@ public class TaskButtons : MonoBehaviour
 
     public void CreateNewTask()
     {
+        taskManager.tasks.Add(taskPrefab);
         Instantiate(taskPrefab, taskTransform.transform);
         
     }
