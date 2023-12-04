@@ -8,6 +8,8 @@ public class TaskManager : MonoBehaviour
 {
     Rigidbody2D rb;
 
+    public List<GameObject> tasks = new List<GameObject>();
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
