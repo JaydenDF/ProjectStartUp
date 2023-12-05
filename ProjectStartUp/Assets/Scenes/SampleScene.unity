@@ -2623,6 +2623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef22329133a97744488693c42ca84690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tasks: []
 --- !u!50 &353921475
 Rigidbody2D:
   serializedVersion: 4
@@ -3704,7 +3705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskPrefab: {fileID: 458403251167681478, guid: c1491959b2cd12c4f94da264267264a2, type: 3}
   taskTransform: {fileID: 353921473}
-  taskManager: {fileID: 0}
+  taskManager: {fileID: 353921474}
 --- !u!1 &484847137
 GameObject:
   m_ObjectHideFlags: 0
