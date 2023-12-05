@@ -12,14 +12,14 @@ public class TimerButtons : MonoBehaviour
         {
             if (timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
             {
-                timer.minutes += 10;
+                timer.minutesTens += 1;
             }
         }
         else if (!isForMain)
         {
             if (timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
             {
-                timer.breakMinutes += 10;
+                timer.breakMinutesTens += 1;
             }
         }
     }
@@ -46,26 +46,26 @@ public class TimerButtons : MonoBehaviour
     {
         if (isForMain)
         {
-            if (timer.seconds < 60 && timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
+            if (timer.secondsTens < 10 && timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
             {
-                timer.seconds += 10;
+                timer.secondsTens += 1;
             }
-            else if (timer.seconds >= 60 && timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
+            else if (timer.secondsTens >= 10 && timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
             {
                 timer.minutes += 1;
-                timer.seconds = 0;
+                timer.secondsTens = 0;
             }
         }
         else if (!isForMain)
         {
-            if (timer.breakSeconds < 60 && timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
+            if (timer.breakSecondsTens < 10 && timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
             {
-                timer.breakSeconds += 10;
+                timer.breakSecondsTens += 1;
             }
-            else if (timer.seconds >= 60 && timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
+            else if (timer.breakSecondsTens >= 10 && timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
             {
                 timer.breakMinutes += 1;
-                timer.breakSeconds = 0;
+                timer.breakSecondsTens = 0;
             }
         }
     }
@@ -102,16 +102,16 @@ public class TimerButtons : MonoBehaviour
     {
         if (isForMain)
         {
-            if (timer.minutes >= 10 && timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
+            if (timer.minutesTens >= 1 && timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
             {
-                timer.minutes -= 10;
+                timer.minutesTens -= 1;
             }
         }
         else if (!isForMain)
         {
-            if (timer.breakMinutes >= 10 && timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
+            if (timer.breakMinutesTens >= 1 && timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
             {
-                timer.breakMinutes -= 10;
+                timer.breakMinutesTens -= 1;
             }
         }
     }
@@ -136,16 +136,16 @@ public class TimerButtons : MonoBehaviour
     {
         if (isForMain)
         {
-            if (timer.seconds >= 10 && timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
+            if (timer.secondsTens >= 1 && timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
             {
-                timer.seconds -= 10;
+                timer.secondsTens -= 1;
             }
         }
         else if (!isForMain)
         {
-            if (timer.breakSeconds >= 10 && timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
+            if (timer.breakSecondsTens >= 1 && timer.timerHasStarted == false && timer.breakTimerHasStarted == false)
             {
-                timer.breakSeconds -= 10;
+                timer.breakSecondsTens -= 1;
             }
         }
     }
@@ -169,14 +169,17 @@ public class TimerButtons : MonoBehaviour
 
     public void ChangeSessionAmmount(bool isIncreasing)
     {
-        if (isIncreasing)
+        if (!timer.timerHasStarted && !timer.breakTimerHasStarted)
         {
-            timer.sessionAmount++;
-        }
-        else if(!isIncreasing && timer.sessionAmount > 0)
-        {
-            timer.sessionAmount--;
-        }
+            if (isIncreasing)
+            {
+                timer.sessionAmount++;
+            }
+            else if (!isIncreasing && timer.sessionAmount > 0)
+            {
+                timer.sessionAmount--;
+            }
+        }   
     }
 
     public void StartTimer()
@@ -184,16 +187,22 @@ public class TimerButtons : MonoBehaviour
         timer.sessionAmount--;
 
         timer.timerHasStarted = true;
+        timer.rememberMinutesTens = timer.minutesTens;
         timer.rememberMinutes = timer.minutes;
+        timer.rememberSecondsTens = timer.secondsTens;
         timer.rememberSeconds = timer.seconds;
 
+        timer.rememberBreakMinutesTens = timer.breakMinutesTens;
         timer.rememberBreakMinutes = timer.breakMinutes;
+        timer.rememberBreakSecondsTens = timer.breakSecondsTens;
         timer.rememberBreakSeconds = timer.breakSeconds;
     }
 
     public void ResetTimer()
     {
+        timer.minutesTens = 0;
         timer.minutes = 0;
+        timer.secondsTens = 0;
         timer.seconds = 0;
         timer.timerHasStarted = false;
     }

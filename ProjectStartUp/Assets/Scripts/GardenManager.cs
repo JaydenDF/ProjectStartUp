@@ -34,8 +34,8 @@ public class GardenManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        waterAmountUI.text = "Water: " + waterAmount;
-        sunAmountUI.text = "Sun: " + sunAmount;
-        seededAmountUI.text = "seeds: " + seedAmount;
+        waterAmountUI.text = waterAmount.ToString();
+        sunAmountUI.text = sunAmount.ToString();
+        seededAmountUI.text = seedAmount.ToString();
     }
 }
