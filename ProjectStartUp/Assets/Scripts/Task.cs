@@ -2,8 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SingularTask : MonoBehaviour
+public class Task : MonoBehaviour
 {
+    [SerializeField] GameObject taskPrefab;
+    int taskPosition;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +18,10 @@ public class SingularTask : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void DeleteMe()
+    {
+
     }
 }
