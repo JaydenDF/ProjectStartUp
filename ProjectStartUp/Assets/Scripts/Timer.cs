@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
-using Microsoft.Unity.VisualStudio.Editor;
-using UnityEngine.UI;
+using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
@@ -23,6 +19,8 @@ public class Timer : MonoBehaviour
     [SerializeField] private GameObject backGroundFooter;
     [SerializeField] private GameObject backGroundHeader;
 
+
+    // TODO: change the colors of blue and main
     //color break blue
     Color breakBlue = new Color(0.4f, 0.8509f, 1);
 
