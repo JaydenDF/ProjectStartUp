@@ -15931,7 +15931,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &738233503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21510,6 +21510,9 @@ MonoBehaviour:
   breakTimerSecondsTens: {fileID: 96093670}
   breakTimerSeconds: {fileID: 1145530295}
   sessionCounter: {fileID: 54356486}
+  backGround: {fileID: 1455280719}
+  backGroundFooter: {fileID: 869949277}
+  backGroundHeader: {fileID: 1782957176}
   minutes: 0
   minutesTens: 0
   rememberMinutes: 0
@@ -34999,7 +35002,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1793207123
 MonoBehaviour:
   m_ObjectHideFlags: 0
