@@ -22,13 +22,13 @@ public class Timer : MonoBehaviour
 
     // TODO: change the colors of blue and main
     //color break blue
-    Color breakBlue = new Color(0.4f, 0.8509f, 1);
+    Color breakBlue = new Color(0.447f, 0.549f, 0.631f);
 
     //color focus red
     Color focusRed = new Color(0.463f, 0.133f, 0.097f);
 
     //color main green
-    Color mainGreen = new Color(0.392f, 0.643f, 0.349f);
+    Color mainGreen = new Color(0.247f, 0.329f, 0.2666f);
 
     //main timer
     public float minutes;
