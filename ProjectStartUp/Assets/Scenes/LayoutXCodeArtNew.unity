@@ -1291,7 +1291,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &61505482
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1314,7 +1314,7 @@ RectTransform:
   - {fileID: 940397181}
   - {fileID: 729835562}
   m_Father: {fileID: 1989321640}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5751,6 +5751,7 @@ GameObject:
   - component: {fileID: 242316642}
   - component: {fileID: 242316641}
   - component: {fileID: 242316640}
+  - component: {fileID: 242316643}
   m_Layer: 5
   m_Name: Sticker slot1
   m_TagString: Untagged
@@ -5821,7 +5822,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 242316641}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 242316643}
+        m_TargetAssemblyTypeName: CalanderSticker, Assembly-CSharp
+        m_MethodName: PlaceSticker
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &242316641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5860,6 +5873,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242316638}
   m_CullTransparentMesh: 1
+--- !u!114 &242316643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242316638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7dc9a11891743f49ab4a5874b1ead6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stickerHolder: {fileID: 566294939}
+  stickerSprite: {fileID: 21300000, guid: cded0d433dfdc7249a5b88f883368f0e, type: 3}
 --- !u!1 &249390265
 GameObject:
   m_ObjectHideFlags: 0
@@ -12406,6 +12433,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560848566}
   m_CullTransparentMesh: 1
+--- !u!1 &566294939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 566294942}
+  - component: {fileID: 566294941}
+  - component: {fileID: 566294940}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &566294940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566294939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &566294941
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566294939}
+  m_CullTransparentMesh: 1
+--- !u!224 &566294942
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566294939}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1989321640}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 35}
+  m_SizeDelta: {x: 25, y: 25}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &574834330
 GameObject:
   m_ObjectHideFlags: 0
@@ -18761,6 +18864,7 @@ GameObject:
   - component: {fileID: 829963412}
   - component: {fileID: 829963414}
   - component: {fileID: 829963413}
+  - component: {fileID: 829963415}
   m_Layer: 5
   m_Name: Calendar
   m_TagString: Untagged
@@ -18833,6 +18937,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 829963411}
   m_CullTransparentMesh: 1
+--- !u!114 &829963415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829963411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40cbe48492474e54b886d2540ac33ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  calanderDay: {fileID: 0}
+  calanderDayButton: {fileID: 0}
+  calanderManager: {fileID: 0}
 --- !u!1 &832896970
 GameObject:
   m_ObjectHideFlags: 0
@@ -19719,7 +19838,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   taskManager: {fileID: 0}
-  taskPrefab: {fileID: 879378117}
   taskPosition: 0
 --- !u!1 &883288014
 GameObject:
@@ -19814,7 +19932,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   taskManager: {fileID: 0}
-  taskPrefab: {fileID: 5583005393374201322, guid: 1bcdbe66460911d4b9f05270b7dfee89, type: 3}
   taskPosition: 0
 --- !u!1 &889632747
 GameObject:
@@ -21149,7 +21266,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1989321640}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -21253,6 +21370,7 @@ GameObject:
   - component: {fileID: 962552969}
   - component: {fileID: 962552971}
   - component: {fileID: 962552970}
+  - component: {fileID: 962552972}
   m_Layer: 5
   m_Name: FunctionController
   m_TagString: Manager
@@ -21429,6 +21547,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &962552972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962552964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04e51f9a385fcc74c904462870dda020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayIsSelectd: 0
 --- !u!1 &977961636
 GameObject:
   m_ObjectHideFlags: 0
@@ -21664,7 +21795,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1989321640}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -23545,6 +23676,7 @@ GameObject:
   - component: {fileID: 1184770814}
   - component: {fileID: 1184770813}
   - component: {fileID: 1184770812}
+  - component: {fileID: 1184770815}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -23615,7 +23747,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1184770813}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1184770815}
+        m_TargetAssemblyTypeName: CalanderDay, Assembly-CSharp
+        m_MethodName: SelectDay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1184770813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23654,6 +23798,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184770810}
   m_CullTransparentMesh: 1
+--- !u!114 &1184770815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184770810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3b56bca97f758e4a9425aba17ff4975, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  calanderManager: {fileID: 962552972}
+  stickerTab: {fileID: 61505481}
 --- !u!1 &1188733338
 GameObject:
   m_ObjectHideFlags: 0
@@ -26908,7 +27066,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1324502535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28545,6 +28703,7 @@ GameObject:
   - component: {fileID: 1445136161}
   - component: {fileID: 1445136160}
   - component: {fileID: 1445136159}
+  - component: {fileID: 1445136162}
   m_Layer: 5
   m_Name: Add event
   m_TagString: Untagged
@@ -28615,7 +28774,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1445136160}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445136162}
+        m_TargetAssemblyTypeName: CalanderButtons, Assembly-CSharp
+        m_MethodName: AddEventToDay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1445136160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28654,6 +28825,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1445136157}
   m_CullTransparentMesh: 1
+--- !u!114 &1445136162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445136157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40cbe48492474e54b886d2540ac33ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  calanderDay: {fileID: 1184770815}
+  calanderDayButton: {fileID: 1184770810}
+  calanderManager: {fileID: 962552972}
 --- !u!1 &1449830570
 GameObject:
   m_ObjectHideFlags: 0
@@ -34786,7 +34972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1793207123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35469,7 +35655,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1989321640}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -38424,6 +38610,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1184770811}
+  - {fileID: 566294942}
   - {fileID: 1825249326}
   - {fileID: 1011838043}
   - {fileID: 957429156}
@@ -38786,7 +38973,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1989321640}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
