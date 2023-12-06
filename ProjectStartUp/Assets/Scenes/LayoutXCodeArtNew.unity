@@ -15776,6 +15776,7 @@ GameObject:
   - component: {fileID: 729835565}
   - component: {fileID: 729835564}
   - component: {fileID: 729835563}
+  - component: {fileID: 729835566}
   m_Layer: 5
   m_Name: Sticker slot1 (8)
   m_TagString: Untagged
@@ -15846,7 +15847,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 729835564}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 729835566}
+        m_TargetAssemblyTypeName: CalanderSticker, Assembly-CSharp
+        m_MethodName: PlaceSticker
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &729835564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15885,6 +15898,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729835561}
   m_CullTransparentMesh: 1
+--- !u!114 &729835566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729835561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7dc9a11891743f49ab4a5874b1ead6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stickerHolder: {fileID: 566294939}
+  stickerSprite: {fileID: 21300000, guid: 2aea8eff2df63c941aefae16fd920bd4, type: 3}
 --- !u!1 &738233502
 GameObject:
   m_ObjectHideFlags: 0
