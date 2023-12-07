@@ -2264,7 +2264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &88494306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4458,7 +4458,19 @@ MonoBehaviour:
         m_MethodName: OpenNewPage
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 88494305}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 219553487}
+        m_TargetAssemblyTypeName: SwitchPage, Assembly-CSharp
+        m_MethodName: OpenNewPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 986597461}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -5503,22 +5515,10 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 264567890}
         m_TargetAssemblyTypeName: SwitchPage, Assembly-CSharp
-        m_MethodName: CloseCurrentPage
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 88494305}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 264567890}
-        m_TargetAssemblyTypeName: SwitchPage, Assembly-CSharp
         m_MethodName: OpenNewPage
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 986597461}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -9060,7 +9060,19 @@ MonoBehaviour:
         m_MethodName: OpenNewPage
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 88494305}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 446702295}
+        m_TargetAssemblyTypeName: SwitchPage, Assembly-CSharp
+        m_MethodName: OpenNewPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 986597461}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -14118,7 +14130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &723609894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15421,7 +15433,7 @@ MonoBehaviour:
         m_MethodName: OpenNewPage
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 723609893}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -20162,7 +20174,7 @@ MonoBehaviour:
         m_MethodName: OpenNewPage
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 723609893}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -21291,7 +21303,7 @@ MonoBehaviour:
         m_MethodName: OpenNewPage
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 723609893}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -21827,7 +21839,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4759485122978727730, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5080879593982093331, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
       propertyPath: m_Color.a
@@ -23783,7 +23795,19 @@ MonoBehaviour:
         m_MethodName: OpenNewPage
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 88494305}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1073683063}
+        m_TargetAssemblyTypeName: SwitchPage, Assembly-CSharp
+        m_MethodName: OpenNewPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 986597461}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -26894,7 +26918,7 @@ MonoBehaviour:
         m_MethodName: OpenNewPage
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 723609893}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -28250,7 +28274,19 @@ MonoBehaviour:
         m_MethodName: CloseCurrentPage
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 986597461}
+          m_ObjectArgument: {fileID: 723609893}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1283319755}
+        m_TargetAssemblyTypeName: SwitchPage, Assembly-CSharp
+        m_MethodName: OpenNewPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 668465426}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -30794,7 +30830,19 @@ MonoBehaviour:
         m_MethodName: OpenNewPage
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 88494305}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1393567667}
+        m_TargetAssemblyTypeName: SwitchPage, Assembly-CSharp
+        m_MethodName: OpenNewPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 986597461}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -32668,7 +32716,19 @@ MonoBehaviour:
         m_MethodName: OpenNewPage
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 88494305}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1495149571}
+        m_TargetAssemblyTypeName: SwitchPage, Assembly-CSharp
+        m_MethodName: OpenNewPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 986597461}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -33083,7 +33143,7 @@ MonoBehaviour:
         m_MethodName: OpenNewPage
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 723609893}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -35345,7 +35405,19 @@ MonoBehaviour:
         m_MethodName: CloseCurrentPage
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 986597461}
+          m_ObjectArgument: {fileID: 1248747237}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1637006624}
+        m_TargetAssemblyTypeName: SwitchPage, Assembly-CSharp
+        m_MethodName: OpenNewPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 668465426}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -37223,6 +37295,7 @@ GameObject:
   - component: {fileID: 1695406282}
   - component: {fileID: 1695406281}
   - component: {fileID: 1695406280}
+  - component: {fileID: 1695406283}
   m_Layer: 5
   m_Name: Log in
   m_TagString: Untagged
@@ -37293,7 +37366,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1695406281}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1695406283}
+        m_TargetAssemblyTypeName: SwitchPage, Assembly-CSharp
+        m_MethodName: CloseCurrentPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1304890624}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1695406283}
+        m_TargetAssemblyTypeName: SwitchPage, Assembly-CSharp
+        m_MethodName: OpenNewPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 668465426}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1695406281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37332,6 +37429,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695406278}
   m_CullTransparentMesh: 1
+--- !u!114 &1695406283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695406278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478ba1e99a86a01408a55ed80836e285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1696537083
 GameObject:
   m_ObjectHideFlags: 0
@@ -45868,7 +45977,19 @@ MonoBehaviour:
         m_MethodName: OpenNewPage
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 88494305}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2110408917}
+        m_TargetAssemblyTypeName: SwitchPage, Assembly-CSharp
+        m_MethodName: OpenNewPage
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 986597461}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
