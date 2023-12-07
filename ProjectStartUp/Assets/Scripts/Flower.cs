@@ -21,10 +21,10 @@ public class Flower : MonoBehaviour
     public bool rewardIsDropped = false;
 
     int currentState;
-    public Sprite state1;
-    public Sprite state2;
-    public Sprite state3;
-    public Sprite state4;
+    [SerializeField] Sprite state1;
+    [SerializeField] Sprite state2;
+    [SerializeField] Sprite state3;
+    [SerializeField] Sprite state4;
 
     public Sprite needSeeds;
     public Sprite needWater;

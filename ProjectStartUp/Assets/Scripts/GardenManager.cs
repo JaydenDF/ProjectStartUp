@@ -5,8 +5,11 @@ using UnityEngine;
 
 public class GardenManager : MonoBehaviour
 {
+    [SerializeField] private TMP_Text waterAmountUIMain;
     [SerializeField] private TMP_Text waterAmountUI;
+    [SerializeField] private TMP_Text sunAmountUIMain;
     [SerializeField] private TMP_Text sunAmountUI;
+    [SerializeField] private TMP_Text seededAmountUIMain;
     [SerializeField] private TMP_Text seededAmountUI;
 
     public int sunAmount = 6;
@@ -37,5 +40,9 @@ public class GardenManager : MonoBehaviour
         waterAmountUI.text = waterAmount.ToString();
         sunAmountUI.text = sunAmount.ToString();
         seededAmountUI.text = seedAmount.ToString();
+
+        waterAmountUIMain.text = waterAmount.ToString();
+        sunAmountUIMain.text = sunAmount.ToString();
+        seededAmountUIMain.text = seedAmount.ToString();
     }
 }
