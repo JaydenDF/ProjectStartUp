@@ -27,9 +27,9 @@ public class GardenManager : MonoBehaviour
 
     private void Awake()
     {
-        sunAmount = 6;
-        waterAmount = 6;
-        seedAmount = 6;
+        //sunAmount = 6;
+        //waterAmount = 6;
+        //seedAmount = 6;
     }
     // Update is called once per frame
     void Update()

@@ -9,11 +9,15 @@ public class TaskManager : MonoBehaviour
     //Rigidbody2D rb;
     //public List<GameObject> tasks = new List<GameObject>();
 
+    [SerializeField] private GardenManager gardenManager;
+
     public RectTransform firstTaskLocation;
     public RectTransform secondTaskLocation;
     public RectTransform thirdTaskLocation;
 
     public int taskAmount = 3;
+    public bool hasHadThreeTasks = false;
+    public bool dailyRewardAvailable;
 
     public bool justDeletedFirst;
     public bool justDeletedSecond;
@@ -27,6 +31,7 @@ public class TaskManager : MonoBehaviour
     void Awake()
     {
         //rb = GetComponent<Rigidbody2D>();
+        dailyRewardAvailable = true;
     }
 
     // Update is called once per frame
@@ -39,6 +44,12 @@ public class TaskManager : MonoBehaviour
         else
         {
             newTaskCanBeCreated = false;
+        }
+
+        if(hasHadThreeTasks && taskAmount == 0 && dailyRewardAvailable)
+        {
+            gardenManager.seedAmount++;
+            dailyRewardAvailable = false;
         }
     }
 }

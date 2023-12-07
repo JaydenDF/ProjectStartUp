@@ -35,6 +35,7 @@ public class TaskButtons : MonoBehaviour
                 Instantiate(taskPrefab, taskManager.thirdTaskLocation);
                 tasks.taskPosition = 3;
                 Debug.Log("im 3");
+                taskManager.hasHadThreeTasks = true;
             }
         }
 
