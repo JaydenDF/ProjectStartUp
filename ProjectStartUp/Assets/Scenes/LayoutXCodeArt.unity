@@ -2074,7 +2074,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &88494306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11724,7 +11724,7 @@ MonoBehaviour:
   growthTimerUI: {fileID: 850948939}
   growthTimerUIBlock: {fileID: 850948937}
   wardrobeItem: {fileID: 5773454982919840719}
-  hasCried: 0
+  isWatered: 0
   isSunned: 0
   isSeeded: 0
   rewardIsDropped: 0
@@ -15242,7 +15242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &738233503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20113,7 +20113,7 @@ MonoBehaviour:
   growthTimerUI: {fileID: 77952618}
   growthTimerUIBlock: {fileID: 77952616}
   wardrobeItem: {fileID: 5773454982919840719}
-  hasCried: 0
+  isWatered: 0
   isSunned: 0
   isSeeded: 0
   rewardIsDropped: 0
@@ -20352,7 +20352,7 @@ MonoBehaviour:
   isHoldingWater: 0
   isHoldingSeeds: 0
   hasSunnedPlant: 0
-  hasCriedYet: 0
+  isWatered: 0
 --- !u!114 &962552969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20374,6 +20374,9 @@ MonoBehaviour:
   breakTimerSecondsTens: {fileID: 96093670}
   breakTimerSeconds: {fileID: 1145530295}
   sessionCounter: {fileID: 54356486}
+  backGround: {fileID: 0}
+  backGroundFooter: {fileID: 0}
+  backGroundHeader: {fileID: 0}
   minutes: 0
   minutesTens: 0
   rememberMinutes: 0
@@ -20407,13 +20410,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef22329133a97744488693c42ca84690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstTaskLocation: {fileID: 0}
+  secondTaskLocation: {fileID: 0}
+  thirdTaskLocation: {fileID: 0}
   taskAmount: 3
-  yFirstTask: 100
-  ySecondTask: 60
-  yThirdTask: 20
   justDeletedFirst: 0
   justDeletedSecond: 0
   justDeletedThird: 0
+  secondTaskMoved: 0
+  thirdTaskMoved: 0
+  newTaskCanBeCreated: 1
 --- !u!50 &962552971
 Rigidbody2D:
   serializedVersion: 4
@@ -33866,7 +33872,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1793207123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34383,7 +34389,7 @@ MonoBehaviour:
   growthTimerUI: {fileID: 530001005}
   growthTimerUIBlock: {fileID: 530001003}
   wardrobeItem: {fileID: 5773454982919840719}
-  hasCried: 0
+  isWatered: 0
   isSunned: 0
   isSeeded: 0
   rewardIsDropped: 0
@@ -37260,7 +37266,7 @@ MonoBehaviour:
   growthTimerUI: {fileID: 1730008332}
   growthTimerUIBlock: {fileID: 1730008330}
   wardrobeItem: {fileID: 5773454982919840719}
-  hasCried: 0
+  isWatered: 0
   isSunned: 0
   isSeeded: 0
   rewardIsDropped: 0
@@ -40800,6 +40806,26 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 702409984c37b1347ad85c3c8db3d606, type: 3}
+    - target: {fileID: 4414152277981955588, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414152277981955588, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414152277981955588, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414152277981955588, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4414152277981955588, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4491634184638393438, guid: 62eaec3e3afbf1b47a39d6090267bba3, type: 3}
       propertyPath: m_Sprite
       value: 
