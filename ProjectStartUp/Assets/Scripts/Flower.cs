@@ -15,7 +15,7 @@ public class Flower : MonoBehaviour
     [SerializeField] GameObject growthTimerUIBlock;
     [SerializeField] WardrobeItem wardrobeItem;
 
-    public bool hasCried = false;
+    public bool isWatered = false;
     public bool isSunned = false;
     public bool isSeeded = false;
     public bool rewardIsDropped = false;
@@ -46,14 +46,14 @@ public class Flower : MonoBehaviour
     {
         roundedGrowthTimer = Mathf.RoundToInt(growthTimer);
 
-        if (isSeeded && hasCried && isSunned && currentState >= 3 && growthTimer <= 0)
+        if (isSeeded && isWatered && isSunned && currentState >= 3 && growthTimer <= 0)
         {
             currentState = 4;
             button.GetComponent<Image>().sprite = state4;
             growthTimerUIBlock.SetActive(false);
             rewardIsDropped = true;
         }
-        else if (isSeeded && hasCried && isSunned && currentState >= 2)
+        else if (isSeeded && isWatered && isSunned && currentState >= 2)
         {
             growthTimerUIBlock.SetActive(true);
             growthTimer -= Time.deltaTime;
@@ -72,11 +72,11 @@ public class Flower : MonoBehaviour
             needsIcon.SetActive(true);
             needsIcon.GetComponent<Image>().sprite = needSeeds;
         }
-        else if (!hasCried && isSeeded)
+        else if (!isWatered && isSeeded)
         {
             needsIcon.GetComponent<Image>().sprite = needWater;
         }
-        else if (!isSunned && hasCried && isSeeded)
+        else if (!isSunned && isWatered && isSeeded)
         {
             needsIcon.GetComponent<Image>().sprite = needSun;
         } else
@@ -100,14 +100,14 @@ public class Flower : MonoBehaviour
         if (gardenManager.isHoldingWater && isSeeded)
         {
             gardenManager.waterAmount--;
-            hasCried = true;
+            isWatered = true;
             gardenManager.isHoldingWater = false;
         }
     }
 
     public void GiveSun()
     {
-        if (gardenManager.isHoldingSun && hasCried)
+        if (gardenManager.isHoldingSun && isWatered)
         {
             gardenManager.sunAmount--;
             isSunned = true;
@@ -122,7 +122,7 @@ public class Flower : MonoBehaviour
             wardrobeItem.currentAmount++;
             rewardIsDropped = false;
             isSeeded = false;
-            hasCried = false;
+            isWatered = false;
             isSunned = false;
             growthTimer = 10;
             currentState = 1;
