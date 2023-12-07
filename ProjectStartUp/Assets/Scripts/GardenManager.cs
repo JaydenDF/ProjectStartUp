@@ -22,7 +22,7 @@ public class GardenManager : MonoBehaviour
     public bool isHoldingSeeds = false;
 
     public bool hasSunnedPlant = false;
-    public bool hasCriedYet = false;
+    public bool isWatered = false;
 
 
     private void Awake()

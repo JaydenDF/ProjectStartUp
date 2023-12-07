@@ -1,10 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
-using Microsoft.Unity.VisualStudio.Editor;
-using UnityEngine.UIElements;
-using Unity.VisualScripting;
+using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
@@ -20,16 +15,20 @@ public class Timer : MonoBehaviour
     [SerializeField] private TMP_Text breakTimerSeconds;
 
     [SerializeField] private TMP_Text sessionCounter;
-    //UnityEngine.UI.Image panel;
+    [SerializeField] private GameObject backGround;
+    [SerializeField] private GameObject backGroundFooter;
+    [SerializeField] private GameObject backGroundHeader;
 
+
+    // TODO: change the colors of blue and main
     //color break blue
-    Color breakBlue = new Color(0.4f, 0.8509f, 1);
+    Color breakBlue = new Color(0.447f, 0.549f, 0.631f);
 
     //color focus red
     Color focusRed = new Color(0.463f, 0.133f, 0.097f);
 
     //color main green
-    Color mainGreen = new Color(0.392f, 0.643f, 0.349f);
+    Color mainGreen = new Color(0.247f, 0.329f, 0.2666f);
 
     //main timer
     public float minutes;
@@ -63,6 +62,7 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        sessionAmount = 1;
         //panel = GameObject.Find("BackgroundPanel").GetComponent<UnityEngine.UI.Image>();
     }
 
@@ -88,7 +88,9 @@ public class Timer : MonoBehaviour
 
         if (timerHasStarted)
         {
-            //panel.color = focusRed;
+            backGround.GetComponent<UnityEngine.UI.Image>().color = focusRed;
+            backGroundHeader.GetComponent<UnityEngine.UI.Image>().color = focusRed;
+            backGroundFooter.GetComponent<UnityEngine.UI.Image>().color = focusRed;
             breakMinutesTens = rememberBreakMinutesTens;
             breakMinutes = rememberBreakMinutes;
             breakSecondsTens = rememberBreakSecondsTens;
@@ -127,7 +129,9 @@ public class Timer : MonoBehaviour
         }
         else if (breakTimerHasStarted && sessionAmount > 0)
         {
-            //panel.color = breakBlue;
+            backGround.GetComponent<UnityEngine.UI.Image>().color = breakBlue;
+            backGroundHeader.GetComponent<UnityEngine.UI.Image>().color = breakBlue;
+            backGroundFooter.GetComponent<UnityEngine.UI.Image>().color = breakBlue;
             minutesTens = rememberMinutesTens;
             minutes = rememberMinutes;
             secondsTens = rememberSecondsTens;
@@ -172,7 +176,9 @@ public class Timer : MonoBehaviour
         }
         else if (!timerHasStarted && !breakTimerHasStarted && sessionAmount <= 0)
         {
-            //panel.color = mainGreen;
+            backGround.GetComponent<UnityEngine.UI.Image>().color = mainGreen;
+            backGroundHeader.GetComponent<UnityEngine.UI.Image>().color = mainGreen;
+            backGroundFooter.GetComponent<UnityEngine.UI.Image>().color = mainGreen;
         }
     }
 }
